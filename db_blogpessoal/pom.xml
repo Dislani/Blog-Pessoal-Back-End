@@ -57,19 +57,17 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- PostgreSQL -->
-		<dependency>
+		<dependency> <!-- PostgreSQL -->
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
-		<!--  Spring Doc -->
-		<dependency>
+		<dependency> <!--  Spring Doc -->
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.6.9</version>
 		</dependency>
-		<!--  Spring Boot Test -->
-		<dependency>
+		<dependency> <!--  Spring Boot Test -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
