@@ -49,7 +49,7 @@ public class Postagem {
 
 
 		
-		/*Iserção dos Getters e Setters*/
+		/*Inserção dos Getters e Setters*/
 		
 		
 		public long getId() {

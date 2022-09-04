@@ -40,8 +40,10 @@ public class Usuario {
 	private String senha;
 	
 	
-	@Size (max=5000, message= "Olink da foto não pode ser  maior que 5000 caracteres")
+	@Size (max=5000, message= "O link da foto não pode ser  maior que 5000 caracteres")
 	private String foto;
+	
+	private String tipo;
 	
 	
 	@OneToMany (mappedBy= "usuario", cascade = CascadeType.REMOVE)
@@ -58,8 +60,10 @@ public class Usuario {
 		this.usuario = usuario;
 		this.senha = senha;
 		this.foto = foto;
+		this.tipo= tipo;
 	}
 
+	
 	public Usuario() { }
 	
 	/*Inserção dos Getters and Setters */
@@ -112,6 +116,15 @@ public class Usuario {
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
 
 
 	public List<Postagem> getPostagem() {
