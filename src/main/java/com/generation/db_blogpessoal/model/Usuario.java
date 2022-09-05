@@ -53,8 +53,7 @@ public class Usuario {
 	//metodos construtores
 	
 
-	public Usuario(Long id, String nome, String usuario,String senha,String foto) {
-		super();
+	public Usuario(Long id, String nome, String usuario,String senha,String foto,String tipo) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
