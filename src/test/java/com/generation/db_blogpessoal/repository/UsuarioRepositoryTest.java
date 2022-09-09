@@ -30,14 +30,10 @@ public class UsuarioRepositoryTest {
 		usuarioRepository.deleteAll();
 		
 		usuarioRepository.save(new Usuario(0L, "Dislani Melo da Silva","dislanidasilva@gmail.com","12345677", "https://i.imgur.com/FETvs20.jpg", " "));
-		
 		usuarioRepository.save(new Usuario(0L,"Amanda silva","amandasilva@gmail.com","12345678", "https://i.imgur.com/NtyGneo.jpg", " "));
-		
 		usuarioRepository.save(new Usuario(0L,"Alice Maria","alicemaria@gmail.com","12345679", "https://i.imgur.com/mB3VM2N.jpg", " "));
-		
 		usuarioRepository.save(new Usuario(0L,"Joana Albuquerque da Silva","joanaalbuquerquesilva@gmail.com","12345680","https://i.imgur.com/JR7kUFU.jpg", " " ));
-
-	}
+}
 
 	@Test
 	@DisplayName("Retorna 1 usuario")

@@ -17,29 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generation.db_blogpessoal.model.Tema;
 import com.generation.db_blogpessoal.repository.TemaRepository;
 
-/*    		01 – Criar o Recurso Tema
 
-
-  * 5- Na Camada Controller será criada a Classe TemaController. 
- 
-   *6- Na Classe TemaController serão criados os seguintes endpoints:
-   
-		getAll() com a capacidade de listar todes os Temas.
-		
-		getById() com a função de trazer um único Tema identificado pelo id.
-		
-		getByDescricao() com a função de trazer todes os Temas cuja descrição possua a palavra pesquisada.
-		
-		post() com a função de gravar (persistir) um novo Tema no Banco de dados.
-		
-		put() com a função de atualizar os dados de um Tema.
-		
-		delete() com a função de apagar um Tema no banco de dados. 
-*/
 
 @RestController
-@CrossOrigin(origins = "+", allowedHeaders= "+")
 @RequestMapping ("/tema")
+@CrossOrigin(origins = "*", allowedHeaders= "*")
 public class TemaController {
 	
 	@Autowired
